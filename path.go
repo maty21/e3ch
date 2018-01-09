@@ -10,7 +10,8 @@ func isRoot(key string) bool {
 }
 
 func checkRootKey(rootKey string) bool {
-	return rootKey != "" && !strings.HasSuffix(rootKey, "/")
+	//return rootKey != "" && !strings.HasSuffix(rootKey, "/")
+	return true
 }
 
 // ensure key, return (realKey, parentKey)
