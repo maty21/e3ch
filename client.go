@@ -31,9 +31,9 @@ type EtcdHRCHYClient struct {
 }
 
 func New(clt *clientv3.Client, rootKey string, dirValue ...string) (*EtcdHRCHYClient, error) {
-	if !checkRootKey(rootKey) {
-		return nil, ErrorInvalidRootKey
-	}
+	//if !checkRootKey(rootKey) {
+	//	return nil, ErrorInvalidRootKey
+	//}
 
 	d := DEFAULT_DIR_VALUE
 	if len(dirValue) > 0 && dirValue[0] != "" {
